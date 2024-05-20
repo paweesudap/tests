@@ -3,6 +3,7 @@ package main
 import "testing"
 
 func TestFizzBuzzShouldReturn1WhenInput1(t *testing.T) {
+
 	input := 1
 
 	got := FizzBuzz(input)
