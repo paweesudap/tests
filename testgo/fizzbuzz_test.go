@@ -57,3 +57,14 @@ func TestFizzBuzzShouldReturn1WhenInput5(t *testing.T) {
 		t.Errorf("got %q but want %q", got, want)
 	}
 }
+func TestFizzBuzzShouldReturn1WhenInput6(t *testing.T) {
+
+	input := 6
+
+	got := FizzBuzz3(input)
+
+	want := "fizz"
+	if got != want {
+		t.Errorf("got %q but want %q", got, want)
+	}
+}
