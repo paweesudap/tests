@@ -26,3 +26,13 @@ func FizzBuzz2(n int) string {
 	}
 	return fizzBuzz[n]
 }
+func FizzBuzz3(n int) string {
+	fizzBuzz := map[int]string{
+		3:  "fizz",
+		5:  "buzz",
+		15: "fizzbuzz",
+	}
+
+	result := fizzBuzz[n]
+	return map[bool]string{true: result, false: strconv.Itoa(n)}[result != ""]
+}
